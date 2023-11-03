@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.A.I Logistics Company</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            transition: 0.5s;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container-fluid {
+    width: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(https://github.com/khadreey/J.A.I-Logistics-/blob/main/4180847.jpg?raw=true) center / cover;
+    background-repeat: no-repeat;
+    padding: 20px; /* Added padding for smaller screens */
+}
+.container {
+width:1200px;
+height: 80px;
+margin:auto;
+display:flex;
+justify-content: space-between;
+align-items: center;
+}
+.logo {
+    color:#fff;
+    cursor: pointer;
+}
+nav ul{
+    list-style: none;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+nav ul li {
+    margin-right:30px;
+    cursor:pointer;
+    color:#fff;
+    font-weight:400;
+    font-size:15px;
+}
+.active{
+    color:#058283;
+}
+nav ul li:hover {
+    color:#058283;
+}
+.btn {
+    width: 120px;
+    height:45px;
+    border-radius:8px;
+    border: none;
+    background: #058283;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn:hover {
+    background: #fff;
+    color: #058283;
+}
+.content {
+    width: 1200px;
+    height:100vh;
+    margin:auto;
+}
+.content h3 {
+    color:#fcffff;
+    padding-top:100px;
+    font-weight:400;
+    font-size:20px;
+}
+.content h1 {
+    font-size:80px;
+    color:#fff;
+    margin-top:20px;
+    line-height:75px;
+}
+.content p {
+    color:#f1f1f1;
+    font-size:20px;
+    margin-top:30px;
+    line-height:30px;
+    letter-spacing:1px;
+}
+.content .btn {
+    margin-top:20px;
+    width:150px;
+    height:50px;
+    font-size: 16px;
+    letter-spacing:1px;
+}
+.content .btn2 {
+    background:transparent;
+    border:1px solid #058283;
+    border-radius: 8px;
+    color:#fff;
+    margin-left: 10px;
+}
+.content .btn2:hover {
+    background:#058283;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #058283;
+}
+
+.navbar li.active a {
+    font-weight: bold;
+}
+body {
+        font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+       
+    }
+  </style>
+   <div class="container-fluid">
+    <div class="container">
+        <h2 class="logo">J.A.I LOGISTICS SERVICES</h2>
+        <nav class="navbar">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contactt.html"><button class="btn">Get in Touch</button></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <br>
+        <br>
+        
+        <h1>J.A.I <br>LOGISTICS<br> SERVICES</h1>
+        <p>J.A.I Logistics Services is a specialized logistics company dedicated to providing top-quality transportation, receiving, and storage solutions for a wide range of goods. Our mission is to offer efficient, reliable, and cost-effective services to businesses of all sizes, optimizing their supply chain management.</p>
+        <button class="btn">Read More</button>
+        <button class="btn btn2">Policy</button>
+    </div>
+   </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Get in Touch</title>
+</head>
+<body>
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="content-container">
+            <div class="info-container">
+                <div class="box">
+                    <div class="icon"><i class="fas fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>17 Olabisi Olaitan <br>Street, Igando <br>Lagos State</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>(+234)909-182-1282</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>jailogistics@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="fullname" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="message" required="required"></textarea>
+                        <span>Type your Message</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .contact {
+            position: relative;
+            min-height: 100vh;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Content at the top */
+            align-items: center;
+            background: url(https://github.com/khadreey/J.A.I-Logistics-/blob/main/tops11.jpg?raw=trues);
+            background-size: cover;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Content at the top */
+            align-items: center;
+        }
+
+        .content-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row; /* Content and form side by side */
+            justify-content: space-between; /* Content and form spaced apart */
+            align-items: flex-start; /* Content and form at the top */
+        }
+
+        .info-container {
+            width: 50%;
+        }
+
+        .box {
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+        }
+
+        .icon {
+            min-width: 60px;
+            height: 60px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+        }
+
+        .text {
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: #fff;
+            flex-direction: column;
+            font-weight: 300;
+        }
+
+        .text h3 {
+            font-weight: 500;
+            color: #00bcd4;
+        }
+
+        .contactForm {
+            width: 45%; /* Adjusted the width to allow space between content and form */
+            padding: 40px;
+            background: #fff;
+        }
+
+        .contactForm h2 {
+            font-size: 30px;
+            color: #333;
+            font-weight: 500;
+        }
+
+
+
+        .inputBox {
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .inputBox input,
+        .inputBox textarea {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+
+        .inputBox span {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #666;
+        }
+
+        .inputBox input:focus ~ span,
+        .inputBox input:valid ~ span,
+        .inputBox textarea:focus ~ span,
+        .inputBox textarea:valid ~ span {
+            color: #e91e63;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+
+        .inputBox input[type="submit"] {
+            width: 100px;
+            background: #00bcd4;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        @media (max-width: 991px) {
+            .contact {
+                flex-direction: column;
+            }
+
+            .container {
+                width: 100%;
+            }
+
+            .content-container {
+                flex-direction: column;
+            }
+
+            .info-container {
+                width: 100%;
+            }
+
+            .contactForm {
+                width: 100%;
+            }
+        }
+        body {
+  font-size: 16px;
+}
+    </style>
+</body>
+</html>

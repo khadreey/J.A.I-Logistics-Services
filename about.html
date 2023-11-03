@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<body>
+    <section id="main">
+        <nav>
+            <a href="#" class="logo"><img src="https://drive.google.com/uc?export=view&Id=1jp5hn5nHcSe7Fs4AtdLiVYf7eSOF7s3b" alt="Logo"></a>
+            <div class="toggle"></div>
+            <ul class="menu">
+                <a href="#" class="lang">En</a>
+        </nav>
+    </section>
+    <section id="about">
+        <div class="about-text">
+            <h1>About Us</h1>
+            <h2>Best Delivery Service</h2>
+            <p>Reliable, Fast, and Customer-friendly</p>
+            <button>View More Details</button>
+        </div>
+    </section>
+    <section id="services">
+        <div class="s-heading">
+            <h1>Services</h1>
+            <p>Here Are Some Services We Provide to Our Customers</p>
+        </div>
+        <div class="b-container">
+            <div class="s-box">
+                <div class="s-b-img">
+                    <div class="s-type">Delivery</div>
+                    <img src="https://images.pexels.com/photos/6170413/pexels-photo-6170413.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Delivery Image">
+                </div>
+                <div class="s-b-text">
+                    <a href="#">At J.A.I Logistics, we offer fast, reliable, and top-notch delivery services at customer-friendly rates.</a>
+                </div>
+            </div>
+            <div class="s-box"> <!-- Corrected missing equal sign -->
+                <div class="s-b-img">
+                    <div class="s-type">Tracking</div>
+                    <img src="https://images.pexels.com/photos/6946139/pexels-photo-6946139.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tracking Image">
+                </div>
+                <div class="s-b-text">
+                    <a href="#">At J.A.I Logistics, we offer a tracking system for real-time location tracking of your goods and packages.</a>
+                </div>
+            </div>
+            <div class="s-box">
+                <div class="s-b-img">
+                    <div class="s-type">Customer <br> Service</div>
+                    <img src="https://images.pexels.com/photos/5239913/pexels-photo-5239913.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Customer Service Image">
+                </div>
+                <div class="s-b-text">
+                    <a href="#">At J.A.I Logistics, we offer friendly agents and fast customer services for all complaints and requirements.</a>
+                </div>
+            </div>
+        </div>
+
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and background-size for the entire body */
+body {
+    background-color: #080808;
+    background-size: 100%;
+    min-height: 100vh;
+    font-family: Calibri, sans-serif; /* Apply font family for the entire document */
+}
+
+/* Header section styles */
+#main {
+    width: 100%;
+    height: 40vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    top: 0;
+    left: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 70px;
+    background-color: #e0751c;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    border-radius: 50px;
+    position: fixed;
+    top: 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li a {
+    padding: 10px 25px;
+    color: #f8f8fa;
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: none; /* Add this for consistent link style */
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.lang {
+    color: #f3ecec;
+}
+
+.logo > img {
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0px;
+    border-radius: 5px;
+}
+
+.toggle {
+    display: none;
+}
+
+.menu li a:hover {
+    background-color: #292929;
+    color: #FFF !important;
+    font-weight: bold;
+    transition: all ease 0.4s;
+}
+
+.lang:hover {
+    background-color: #292929;
+    color: #FFF !important;
+    font-weight: bold;
+    transition: all ease 0.4s;
+}
+
+/* About section styles */
+#about {
+    width: 100%;
+    height: 55vh;
+    background-color: #161616;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5% 0 5%;
+}
+
+.about-text {
+    font-family: Calibri, sans-serif; /* Apply font family for text in this section */
+    width: 50%;
+}
+
+.about-text h1 {
+    font-size: 5rem;
+    color: #e0751c;
+    margin: 0;
+    padding: 0;
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.90);
+}
+
+.about-text button {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #e0751c;
+    color: #FFF;
+}
+
+.about-text button:hover {
+    background-color: #FFFFFF;
+    transition: all ease 0.3s;
+}
+
+/* Services section styles */
+#services {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif; /* Apply font family for text in this section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px; /* Adjusted padding for better spacing */
+    background-color: #e0751c;
+}
+
+.s-heading h1 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.s-heading p {
+    color: #FFF;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.s-heading {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.s-box {
+    background-color: #2B2B2B;
+    width: 350px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s; /* Added transition for hover effect */
+}
+
+.b-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.s-b-img {
+    width: 100%;
+    height: 70%;
+}
+
+.s-b-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.s-b-text {
+    width: 100%;
+    height: 30%;
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.s-b-text a {
+    margin: 0;
+    color: #FFF;
+    font-size: 1.1rem;
+    font-family: Calibri, sans-serif; /* Apply font family for text in this section */
+    display: block;
+    display: -webkit-box;
+    max-width: 80%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none; /* Add this for consistent link style */
+}
+
+.s-b-text a:hover {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.s-type {
+    font-family: Calibri, sans-serif; /* Apply font family for the text */
+    color: #FFFFFF;
+    background-color: #151515;
+    padding: 10px 15px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.s-box:hover {
+    transform: translateY(-10px);
+}
+@media screen and (max-width: 768px) {
+            /* Adjust styles for screens with a maximum width of 768px (e.g., iPhones and many Android devices) */
+
+            /* Example: Adjust the font size for smaller screens */
+            body {
+                font-size: 14px;
+            }
+        }
+   
+    </style>
+</body>
+</html>
